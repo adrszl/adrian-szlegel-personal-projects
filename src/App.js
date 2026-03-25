@@ -58,6 +58,18 @@ function App() {
               <Grid item xs={3}>
                 <Card variant="outlined">
                   <CardContent>
+                    <h4>Movie search</h4>
+                    <p>Movie search, based on the React, Redux and Antd, responsible for the UI. Allows you to search for a specific movie, in return giving you official poster, title and the production year. Data is coming from the open API <u>https://www.omdbapi.com</u></p>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" href="https://adrian-szlegel-react-movie-search.netlify.app/">Open project</Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+
+              <Grid item xs={3}>
+                <Card variant="outlined">
+                  <CardContent>
                     <h4>More to be added...</h4>
                   </CardContent>
                 </Card>
