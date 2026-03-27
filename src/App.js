@@ -70,6 +70,18 @@ function App() {
               <Grid item xs={3}>
                 <Card variant="outlined">
                   <CardContent>
+                    <h4>Load Animation</h4>
+                    <p>Different loading animations and placeholders, based on the React, Next.js and Storybook. Allows to choose appropriate loading placeholder, based on the content. Different loaders for images, paragraphs, tables, text blocks, etc.</p>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" href="https://adrian-szlegel-react-load-animation.netlify.app/">Open project</Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+
+              <Grid item xs={3}>
+                <Card variant="outlined">
+                  <CardContent>
                     <h4>More to be added...</h4>
                   </CardContent>
                 </Card>
