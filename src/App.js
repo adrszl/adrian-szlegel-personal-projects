@@ -79,7 +79,19 @@ function App() {
                 </Card>
               </Grid>
 
-              <Grid item xs={3}>
+              <Grid size={2}>
+                <Card variant="outlined">
+                  <CardContent>
+                    <h4>Character Card</h4>
+                    <p>RPG Character Card, based on the React. With all the statistics, skills, abilities, etc.</p>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" href="https://adrian-szlegel-react-character-card.netlify.app/">Open project</Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+
+              <Grid size={2}>
                 <Card variant="outlined">
                   <CardContent>
                     <h4>More to be added...</h4>
