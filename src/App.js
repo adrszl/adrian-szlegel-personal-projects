@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from "@mui/material/CardContent";
@@ -27,11 +27,11 @@ function App() {
       </header>
       <main>
         <section>
-          <Container fixed={true} maxWidth="lg">
+          <Box padding={4}>
             <h2>Hosted projects</h2>
             <h3>React projects</h3>
             <Grid container spacing={4}>
-              <Grid item xs={3}>
+              <Grid size={2}>
                 <Card variant="outlined">
                   <CardContent>
                     <h4>Personal Portfolio Page (React version)</h4>
@@ -43,7 +43,7 @@ function App() {
                 </Card>
               </Grid>
 
-              <Grid item xs={3}>
+              <Grid size={2}>
                 <Card variant="outlined">
                   <CardContent>
                     <h4>Star Wars Battle App</h4>
@@ -55,7 +55,7 @@ function App() {
                 </Card>
               </Grid>
 
-              <Grid item xs={3}>
+              <Grid size={2}>
                 <Card variant="outlined">
                   <CardContent>
                     <h4>Movie search</h4>
@@ -67,7 +67,7 @@ function App() {
                 </Card>
               </Grid>
 
-              <Grid item xs={3}>
+              <Grid size={2}>
                 <Card variant="outlined">
                   <CardContent>
                     <h4>Load Animation</h4>
@@ -99,7 +99,7 @@ function App() {
                 </Card>
               </Grid>
             </Grid>
-          </Container>
+          </Box>
         </section>
       </main>
     </div>
