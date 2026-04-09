@@ -94,6 +94,18 @@ function App() {
               <Grid size={2}>
                 <Card variant="outlined">
                   <CardContent>
+                    <h4>Tic Tac Toe</h4>
+                    <p>Tic Tac Toe game, based on the React. With the possibility to enter custom user names. Includes logs, with all the moves made.</p>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" href="https://react-tic-tac-toe-spa.netlify.app/">Open project</Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+
+              <Grid size={2}>
+                <Card variant="outlined">
+                  <CardContent>
                     <h4>More to be added...</h4>
                   </CardContent>
                 </Card>
