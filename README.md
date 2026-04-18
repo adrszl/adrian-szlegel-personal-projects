@@ -1,5 +1,7 @@
 # Adrian Szlegel Personal Projects
 
+## Netlify link: https://adrian-szlegel-personal-projects.netlify.app/
+
 ### Projects listed:
 - Personal Portfolio Page
 - Star Wars Battle App
