@@ -8,3 +8,4 @@
 - Movie search
 - Load Animation
 - Character Card
+- Investment Calculator
