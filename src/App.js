@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import logo from './logo.svg';
 import './App.css';
 import Box from '@mui/material/Box';
@@ -6,8 +7,24 @@ import Card from '@mui/material/Card';
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 
 function App() {
+  const [files, setFiles] = useState([]);
+  const [code, setCode] = useState("");
+
+  useEffect(() => {
+    fetch("https://api.github.com/repos/adrszl/freecodecamp/contents/javascript-certification/labs")
+      .then(res => res.json())
+      .then(data => setFiles(data));
+  }, []);
+
+  const loadFile = (url) => {
+    fetch(url)
+      .then(res => res.text())
+      .then(setCode);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -99,6 +116,18 @@ function App() {
                   </CardContent>
                   <CardActions>
                     <Button size="small" href="https://react-tic-tac-toe-spa.netlify.app/">Open project</Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+
+              <Grid size={2}>
+                <Card variant="outlined">
+                  <CardContent>
+                    <h4>Investment Calculator</h4>
+                    <p>Investment Calculator, based on the React. You can calculate your future income by adding proper factors and include your initial investment.</p>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" href="https://react-investment-calculator-spa.netlify.app/">Open project</Button>
                   </CardActions>
                 </Card>
               </Grid>
