@@ -139,6 +139,27 @@ function App() {
                   </CardContent>
                 </Card>
               </Grid>
+
+              {/* <Grid size={12}>
+                <h3>JavaScript FreeCodeCamp</h3>
+                <p>Code associated with FreeCodeCamp Courses (WIP)</p>
+                <div style={{ display: 'flex' }}>
+                  <Grid size={3}>
+                    <ul>
+                      {files.map(file => (
+                        <li key={file.name}>
+                          <button onClick={() => loadFile(file.download_url)}>
+                            {file.name}
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
+                  </Grid>
+                  <Grid size={9}>
+                    {code && <SyntaxHighlighter language="javascript">{code}</SyntaxHighlighter>}
+                  </Grid>
+                </div>
+              </Grid> */}
             </Grid>
           </Box>
         </section>
