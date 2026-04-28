@@ -7,23 +7,23 @@ import Card from '@mui/material/Card';
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+// import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 
 function App() {
-  const [files, setFiles] = useState([]);
-  const [code, setCode] = useState("");
+  // const [files, setFiles] = useState([]);
+  // const [code, setCode] = useState("");
 
-  useEffect(() => {
-    fetch("https://api.github.com/repos/adrszl/freecodecamp/contents/javascript-certification/labs")
-      .then(res => res.json())
-      .then(data => setFiles(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch("https://api.github.com/repos/adrszl/freecodecamp/contents/javascript-certification/labs")
+  //     .then(res => res.json())
+  //     .then(data => setFiles(data));
+  // }, []);
 
-  const loadFile = (url) => {
-    fetch(url)
-      .then(res => res.text())
-      .then(setCode);
-  };
+  // const loadFile = (url) => {
+  //   fetch(url)
+  //     .then(res => res.text())
+  //     .then(setCode);
+  // };
 
   return (
     <div className="App">
